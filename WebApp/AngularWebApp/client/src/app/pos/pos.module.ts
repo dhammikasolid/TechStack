@@ -10,6 +10,5 @@ import { PosComponent } from './pos.component';
     imports: [
     ],
     providers: [],
-    bootstrap: []
 })
 export class PosModule { }

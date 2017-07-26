@@ -5,5 +5,5 @@
     template: '{{ title }}',
 })
 export class PosComponent {
-    title = 'Pos ***';
+    title = 'Pos';
 }

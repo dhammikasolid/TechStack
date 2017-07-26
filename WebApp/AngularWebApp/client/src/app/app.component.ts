@@ -7,5 +7,5 @@ import { PosModule } from './pos/pos.module';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'app ***';
+    title = 'App';
 }
