@@ -2,7 +2,7 @@
 
 @Component({
     selector: 'pos-root',
-    template: '{{ title }}',
+    templateUrl: './pos.component.html',
 })
 export class PosComponent {
     title = 'Pos';
