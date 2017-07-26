@@ -1,14 +1,15 @@
 ﻿import { NgModule } from '@angular/core';
 
 import { PosComponent } from './pos.component';
+import { PosFacilityComponent } from './pos-facility.component';
 
 @NgModule({
     declarations: [
-        PosComponent
+        PosComponent,
+        PosFacilityComponent
     ],
     exports: [PosComponent],
-    imports: [
-    ],
+    imports: [],
     providers: [],
 })
 export class PosModule { }
