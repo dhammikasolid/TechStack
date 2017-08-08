@@ -1,5 +1,4 @@
 ﻿import { Component } from '@angular/core';
-import { PosModule } from './pos/pos.module';
 
 @Component({
   selector: 'app-root',

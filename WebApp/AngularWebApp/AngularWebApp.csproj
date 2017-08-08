@@ -12,6 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="client\src\app\moduleA\models\" />
+    <Folder Include="client\src\app\moduleA\services\" />
+    <Folder Include="client\src\app\moduleB\models\" />
+    <Folder Include="client\src\app\moduleB\services\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
@@ -22,6 +26,20 @@
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="client\src\app\moduleA\components\list.component.css">
+      <DependentUpon>list.component.html</DependentUpon>
+    </None>
+    <None Update="client\src\app\moduleA\components\list.component.ts">
+      <DependentUpon>list.component.html</DependentUpon>
+    </None>
+    <None Update="client\src\app\moduleB\components\list.component.css">
+      <DependentUpon>list.component.html</DependentUpon>
+    </None>
+    <None Update="client\src\app\moduleB\components\list.component.ts">
+      <DependentUpon>list.component.html</DependentUpon>
+    </None>
   </ItemGroup>
 
 </Project>
