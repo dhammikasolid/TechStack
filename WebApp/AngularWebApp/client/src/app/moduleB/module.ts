@@ -1,6 +1,7 @@
 ﻿import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { RoutingModule } from './routing.module';
 import { ContainerComponent } from './components/container.component';
 import { ListComponent } from './components/list.component';
 
@@ -10,10 +11,11 @@ import { ListComponent } from './components/list.component';
         ListComponent
     ],
     exports: [
-        ContainerComponent
+        ContainerComponent,
     ],
     imports: [
         BrowserModule,
+        RoutingModule
     ],
 })
 export class Module { }

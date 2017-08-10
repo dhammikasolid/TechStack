@@ -2,19 +2,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'
 
+import { CoreComponentsModule } from './core/components/core-components.module';
+import { RoutingModule } from './routing.module';
 import { AppComponent } from './app.component';
-import { Module as AModule} from './moduleA/module';
+
+import { Module as AModule } from './moduleA/module';
 import { Module as BModule } from './moduleB/module';
-
-import { ContainerComponent as AComponent } from './moduleA/components/container.component'
-import { ContainerComponent as BComponent } from './moduleB/components/container.component'
-
-
-const appRoutes: Routes = [
-    { path: 'a', component: AComponent },
-    { path: 'b', component: BComponent }, // <-- delete this line
-    { path: '', redirectTo: '/a', pathMatch: 'full' }
-];
 
 @NgModule({
   declarations: [
@@ -22,13 +15,11 @@ const appRoutes: Routes = [
   ],
   imports: [
       BrowserModule,
-      RouterModule.forRoot(
-          appRoutes,
-          { enableTracing: true }
-      ),
-
+      RouterModule,
+      CoreComponentsModule,
       AModule,
-      BModule
+      BModule,
+      RoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
