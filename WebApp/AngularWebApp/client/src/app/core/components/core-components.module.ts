@@ -1,7 +1,7 @@
-﻿import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+﻿import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { ResourceNotFoundComponent } from './resource-not-found.component';
+import { ResourceNotFoundComponent } from "./resource-not-found.component";
 
 @NgModule({
   declarations: [

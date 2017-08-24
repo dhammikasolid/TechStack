@@ -1,10 +1,10 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component } from "@angular/core";
 
 @Component({
-  selector: 'list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  selector: "list",
+  templateUrl: "./list.component.html",
+  styleUrls: ["./list.component.css"]
 })
 export class ListComponent {
-    title = 'A List';
+    title = "A List";
 }

@@ -1,16 +1,15 @@
-﻿import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+﻿import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 
-import { ContainerComponent } from './components/container.component';
+import { ContainerComponent } from "./components/container.component";
 
 const routes: Routes = [
-    { path: 'b', component: ContainerComponent }
+    { path: "b", component: ContainerComponent }
 ];
 
 @NgModule({
     imports: [
-        RouterModule.forChild(routes),
-    ],
+        RouterModule.forChild(routes)
+    ]
 })
 export class RoutingModule { }

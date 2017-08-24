@@ -6,5 +6,5 @@
   styleUrls: ["./list.component.css"]
 })
 export class ListComponent {
-    title = "B List";
+    title = "A 1 List";
 }

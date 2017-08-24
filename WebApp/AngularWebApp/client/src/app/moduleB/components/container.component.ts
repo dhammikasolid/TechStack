@@ -1,10 +1,10 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component } from "@angular/core";
 
 @Component({
-  selector: 'b-container',
-  templateUrl: './container.component.html',
-  styleUrls: ['./container.component.css']
+  selector: "container",
+  templateUrl: "./container.component.html",
+  styleUrls: ["./container.component.css"]
 })
 export class ContainerComponent {
-    title = 'B Container';
+    title = "B Container";
 }

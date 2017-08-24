@@ -1,6 +1,5 @@
 ﻿import { NgModule } from "@angular/core";
 
-import { RoutingModule } from "./routing.module";
 import { ContainerComponent } from "./components/container.component";
 import { ListComponent } from "./components/list.component";
 
@@ -10,7 +9,6 @@ import { ListComponent } from "./components/list.component";
         ListComponent
     ],
     imports: [
-        RoutingModule
     ]
 })
 export class Module { }
