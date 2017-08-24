@@ -34,6 +34,12 @@
     <None Update="client\src\app\moduleA\components\list.component.ts">
       <DependentUpon>list.component.html</DependentUpon>
     </None>
+    <None Update="client\src\app\moduleA\moduleA1\components\list.component.css">
+      <DependentUpon>list.component.html</DependentUpon>
+    </None>
+    <None Update="client\src\app\moduleA\moduleA1\components\list.component.ts">
+      <DependentUpon>list.component.html</DependentUpon>
+    </None>
     <None Update="client\src\app\moduleB\components\list.component.css">
       <DependentUpon>list.component.html</DependentUpon>
     </None>
