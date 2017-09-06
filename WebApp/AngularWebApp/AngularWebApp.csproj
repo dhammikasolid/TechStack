@@ -6,16 +6,28 @@
 
   <ItemGroup>
     <Compile Remove="client\node_modules\**" />
+    <Compile Remove="client\src\app\moduleA\models\**" />
+    <Compile Remove="client\src\app\moduleA\services\**" />
+    <Compile Remove="client\src\app\moduleB\models\**" />
+    <Compile Remove="client\src\app\moduleB\services\**" />
     <Content Remove="client\node_modules\**" />
+    <Content Remove="client\src\app\moduleA\models\**" />
+    <Content Remove="client\src\app\moduleA\services\**" />
+    <Content Remove="client\src\app\moduleB\models\**" />
+    <Content Remove="client\src\app\moduleB\services\**" />
     <EmbeddedResource Remove="client\node_modules\**" />
+    <EmbeddedResource Remove="client\src\app\moduleA\models\**" />
+    <EmbeddedResource Remove="client\src\app\moduleA\services\**" />
+    <EmbeddedResource Remove="client\src\app\moduleB\models\**" />
+    <EmbeddedResource Remove="client\src\app\moduleB\services\**" />
     <None Remove="client\node_modules\**" />
+    <None Remove="client\src\app\moduleA\models\**" />
+    <None Remove="client\src\app\moduleA\services\**" />
+    <None Remove="client\src\app\moduleB\models\**" />
+    <None Remove="client\src\app\moduleB\services\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="client\src\app\moduleA\models\" />
-    <Folder Include="client\src\app\moduleA\services\" />
-    <Folder Include="client\src\app\moduleB\models\" />
-    <Folder Include="client\src\app\moduleB\services\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
