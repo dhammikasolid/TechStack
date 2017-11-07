@@ -1,10 +1,12 @@
 ﻿import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
-import { ContainerComponent } from "./components/container.component";
+import { ListComponent } from "./components/list.component";
+import { DetailComponent } from "./components/detail.component";
 
 const routes: Routes = [
-    { path: "b", component: ContainerComponent }
+    { path: "b", component: ListComponent },
+    { path: "b/:id", component: DetailComponent }
 ];
 
 @NgModule({

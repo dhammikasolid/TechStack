@@ -1,4 +1,4 @@
-﻿import { Utility } from "../core/utility";
+﻿import { MergeRoutes } from "../core/utility";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: "a",
     component: ContainerComponent,
-    children: Utility.mergeRoutes([A1RoutingModule.routes])
+    children: MergeRoutes([A1RoutingModule.routes])
   }
 ];
 

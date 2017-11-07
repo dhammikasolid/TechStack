@@ -3,8 +3,6 @@ import { RouterModule, Routes } from "@angular/router";
 
 import { ResourceNotFoundComponent } from "./core/components/resource-not-found.component";
 
-import { ContainerComponent as AComponent } from "./moduleA/components/container.component";
-
 const appRoutes: Routes = [
   { path: "", redirectTo: "/a", pathMatch: "full" },
   { path: "**", component: ResourceNotFoundComponent }
@@ -18,4 +16,4 @@ const appRoutes: Routes = [
       )
   ]
 })
-export class RoutingModule { }
+export class AppRoutingModule { }

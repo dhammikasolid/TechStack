@@ -1,16 +1,18 @@
 ﻿import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
 
 import { RoutingModule } from "./routing.module";
-import { ContainerComponent } from "./components/container.component";
+import { DetailComponent } from "./components/detail.component";
 import { ListComponent } from "./components/list.component";
 
 @NgModule({
     declarations: [
-        ContainerComponent,
+        DetailComponent,
         ListComponent
     ],
     imports: [
-        RoutingModule
+        RoutingModule,
+        RouterModule
     ]
 })
 export class Module { }

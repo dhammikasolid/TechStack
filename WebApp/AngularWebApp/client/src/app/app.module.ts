@@ -1,10 +1,15 @@
-﻿import { NgModule } from "@angular/core";
+﻿// Framework/Vendor core modules
+import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router"
 
+// App core modules
 import { CoreComponentsModule } from "./core/components/core-components.module";
-import { RoutingModule } from "./routing.module";
+// App core routing module
+import { AppRoutingModule } from "./app.routing.module";
+// App root component
 import { AppComponent } from "./app.component";
 
+//Level 1 feature modules
 import { Module as AModule } from "./moduleA/module";
 import { Module as BModule } from "./moduleB/module";
 
@@ -17,7 +22,7 @@ import { Module as BModule } from "./moduleB/module";
       CoreComponentsModule,
       AModule,
       BModule,
-      RoutingModule
+      AppRoutingModule
   ],
   bootstrap: [AppComponent]
 })
