@@ -7,25 +7,25 @@ using System.Threading.Tasks;
 namespace EF
 {
     using Models;
+    using System.Data.Entity;
 
     class Program
     {
         static void Main(string[] args)
         {
+            Database.SetInitializer(new SchoolDbInitializer());
+
             using (var db = new SchoolDbContext())
             {
-                var _class = new Class
-                {
-                    Name = "C1",
-                };
+                var c1 = db.Classes
+                    .Where(c => c.Name == "C1")
+                    .FirstOrDefault();
 
-                db.Classes.Add(_class);
-                db.SaveChanges();
-
-                var query = from c in db.Classes
-                            select c;
-
-                var count = query.Count();
+                var t1 = db.Entry(c1)
+                    .Collection(c => c.Teachers)
+                    .Query()
+                    .Where(t => t.Teacher.Name == "T1")
+                    .FirstOrDefault();
             }
         }
     }

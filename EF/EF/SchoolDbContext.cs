@@ -13,6 +13,7 @@ namespace EF
     {
         public SchoolDbContext() : base("SchoolDbConnection")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public DbSet<Student> Students { get; set; }
