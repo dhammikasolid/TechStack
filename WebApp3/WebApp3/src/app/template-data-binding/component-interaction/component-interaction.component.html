@@ -1,0 +1,44 @@
+<h3>Component Interaction</h3>
+<br />
+<h4>Parent Controls Data (Input Properties)</h4>
+<h5># Input Component Properties</h5>
+<app-component-interaction-input-child
+                                 [prop]="prop"
+                                 [objectProp]="objectProp"
+                                 [collection]="collection"></app-component-interaction-input-child>
+<br />
+<h5># Template Input Variable (*ngFor)</h5>
+<app-component-interaction-input-child *ngFor="let item of collection"
+                                 [objectProp]="item"></app-component-interaction-input-child>
+<br />
+<button (click)="changeProp()">changeProp()</button>
+<button (click)="changeObjectProp()">changeObjectProp()</button>
+<button (click)="changeCollectionObject()">changeCollectionObject()</button>
+
+<br /><br /><br />
+
+<h4>Child Controls Data</h4>
+<h5># Output Properties, Events</h5>
+<div>{{ prop }}</div>
+<div>{{ objectProp | json }}</div>
+<app-component-interaction-twoway-child 
+                                  [(prop)]="prop"
+                                  [(objectProp)]="objectProp"
+                                  [collection]="collection"></app-component-interaction-twoway-child>
+<br /><br />
+<h5># Template Reference Variable</h5>
+<app-component-interaction-reference-child #childRef></app-component-interaction-reference-child>
+<div>Parent: {{ childRef.prop }}</div>
+<button (click)="passToComponent(childRef)">passToComponent(childRef)</button>
+<button (click)="passObjectToComponent(childRef.prop)">passObjectToComponent(childRef.prop)</button>
+
+
+<br /><br />
+<h5># @ViewChild injection</h5>
+Parent: {{ viewChild.prop }}
+<br />
+<app-component-interaction-view-child></app-component-interaction-view-child>
+<br />
+<button (click)="viewChildAccess()">viewChildAccess()</button>
+<br /><br /><br />
+

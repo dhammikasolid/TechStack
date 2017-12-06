@@ -1,0 +1,24 @@
+<h4>Data Binding</h4>
+<p>Template Expressions/Statements</p>
+<p>Binding Direction: [], interpolation syntax | () | ([])</p>
+<p>Binding Targets: (DOM | Component | Directive) Property/Event</p>
+
+<p>Interpolation: {{ property }}</p>
+<button (click)="eventHandler1()">eventHandler1()</button>
+<br />
+
+<p>Collection *ngFor: {{ collection.length }}</p>
+<ul class="list-unstyled">
+  <li *ngFor="let item of collection">
+    Prop1: {{ item.prop1 }} Prop2: {{ item.prop2 }}
+    <button (click)="eventHandlerArgs(item)">eventHandlerArgs(item)</button>
+  </li>
+</ul>
+<p>{{ selectedItem | json }}</p>
+<br />
+
+<button [disabled]="deactive" class="btn" [class.btn-danger]="deactive" [style.color]="deactive ? 'red' : 'green'">Content</button>
+<button (click)="eventHandler2()">eventHandler2()</button>
+<br />
+
+

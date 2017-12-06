@@ -1,0 +1,25 @@
+<h3>Structural Directives</h3>
+<br />
+
+<h4>*ngFor</h4>
+<p>No track by</p>
+<ul>
+  <li *ngFor="let item of collection">{{ item.id + ' ' + item.val }}</li>
+</ul>
+<p>Track by</p>
+<ul>
+  <li *ngFor="let item of collection; trackBy: trackBy">{{ item.id + ' ' + item.val }}</li>
+</ul>
+<button (click)="changeCollection()">Change Collection</button>
+<button (click)="changeCollectionItem()">Change Collection Item</button>
+<br />
+
+<h4>ngSwtich</h4>
+<div [ngSwitch]="switch">
+  <div *ngSwitchCase="'a'">A</div>
+  <div *ngSwitchCase="'b'">B</div>
+  <div *ngSwitchCase="'c'">C</div>
+</div>
+<button (click)="changeSwitch()">Change Switch</button>
+
+
