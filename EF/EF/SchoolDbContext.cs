@@ -11,7 +11,7 @@ namespace EF
 
     public class SchoolDbContext: DbContext
     {
-        public SchoolDbContext() : base("SchoolDbConnection")
+        public SchoolDbContext() : base("SchoolDbConnectionOffice")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
