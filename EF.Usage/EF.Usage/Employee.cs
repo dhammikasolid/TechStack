@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 
 namespace EF.Usage
 {
@@ -17,5 +18,9 @@ namespace EF.Usage
         public DateTime? BirthDate { get; set; }
 
         public decimal? Salery { get; set; }
+
+        [ForeignKey("Department")]
+        public int? DepartmentId { get; set; }
+        public virtual Department Department { get; set; }
     }
 }

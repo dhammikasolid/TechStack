@@ -9,7 +9,7 @@ namespace EF.Usage
 {
     public class EmployeeDbContext : DbContext
     {
-        public EmployeeDbContext() : base("office")
+        public EmployeeDbContext() : base("home")
         {
 
         }
