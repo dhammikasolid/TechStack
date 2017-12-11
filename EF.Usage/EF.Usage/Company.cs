@@ -6,17 +6,12 @@ using System.Threading.Tasks;
 
 namespace EF.Usage
 {
-    public class Department
+    public class Company
     {
         public int Id { get; set; }
 
         public string Name { get; set; }
 
-        public decimal? Budget { get; set; }
-
-        public int? CompanyId { get; set; }
-        public virtual Company Company { get; set; }
-
-        public virtual List<Employee> Employees { get; set; }
+        public virtual List<Department> Departments { get; set; }
     }
 }

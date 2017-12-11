@@ -64,7 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmployeeDbInitializer.cs" />
-    <Compile Include="Tests.cs" />
+    <Compile Include="DataModifyTests.cs" />
+    <Compile Include="QueryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

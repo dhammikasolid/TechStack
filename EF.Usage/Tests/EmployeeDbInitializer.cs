@@ -22,11 +22,17 @@ namespace Tests
 
         void Populate(EmployeeDbContext context)
         {
+            var companies = new List<Company>
+            {
+                new Company { Name = "C1" },
+                new Company { Name = "C2" },
+            };
+
             var departments = new List<Department>()
             {
-                new Department { Name = "constructor", Budget = 500000 },
-                new Department { Name = "fixture", Budget = 400000 },
-                new Department { Name = "instance", Budget = 350000 },
+                new Department { Name = "constructor", Budget = 500000, Company = companies[0] },
+                new Department { Name = "fixture", Budget = 400000, Company = companies[1] },
+                new Department { Name = "instance", Budget = 350000, Company = companies[0] },
             };
 
             var employees = new List<Employee>()
