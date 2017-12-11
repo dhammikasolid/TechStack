@@ -17,5 +17,6 @@ namespace EF.Usage
         public DbSet<Company> Companies { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<JobRole> JobRoles { get; set; }
     }
 }

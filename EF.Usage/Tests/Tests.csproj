@@ -67,6 +67,7 @@
     <Compile Include="DataModifyTests.cs" />
     <Compile Include="QueryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelationshipsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

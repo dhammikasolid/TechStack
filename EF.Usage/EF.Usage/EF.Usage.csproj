@@ -51,6 +51,7 @@
     <Compile Include="Department.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeDbContext.cs" />
+    <Compile Include="JobRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
