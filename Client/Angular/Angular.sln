@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General", "General\General.csproj", "{2ABF2346-AD2A-4DE9-8174-4F03587B1405}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsCoreRazorPagesApp", "AsCoreRazorPagesApp\AsCoreRazorPagesApp.csproj", "{0D3AEF80-B5B8-42D2-A7FD-7A1250D83AF0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsCoreRazorPagesMultipleApps", "AsCoreRazorPagesMultipleApps\AsCoreRazorPagesMultipleApps.csproj", "{F3646ECB-386A-498B-8995-FEC1F99C44DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "All", "All\All.csproj", "{2ABF2346-AD2A-4DE9-8174-4F03587B1405}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +15,6 @@ Global
 		{2ABF2346-AD2A-4DE9-8174-4F03587B1405}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ABF2346-AD2A-4DE9-8174-4F03587B1405}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ABF2346-AD2A-4DE9-8174-4F03587B1405}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0D3AEF80-B5B8-42D2-A7FD-7A1250D83AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D3AEF80-B5B8-42D2-A7FD-7A1250D83AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D3AEF80-B5B8-42D2-A7FD-7A1250D83AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D3AEF80-B5B8-42D2-A7FD-7A1250D83AF0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3646ECB-386A-498B-8995-FEC1F99C44DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3646ECB-386A-498B-8995-FEC1F99C44DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3646ECB-386A-498B-8995-FEC1F99C44DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3646ECB-386A-498B-8995-FEC1F99C44DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
