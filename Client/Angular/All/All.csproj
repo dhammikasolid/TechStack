@@ -91,6 +91,12 @@
     <Content Include="src\app\domain-a\feature-1\feature-1.component.html" />
     <Content Include="src\app\domain-a\feature-2\feature-2.component.css" />
     <Content Include="src\app\domain-a\feature-2\feature-2.component.html" />
+    <Content Include="src\app\domain-b\domain-b.component.css" />
+    <Content Include="src\app\domain-b\domain-b.component.html" />
+    <Content Include="src\app\domain-b\feature-1\feature-1.component.css" />
+    <Content Include="src\app\domain-b\feature-1\feature-1.component.html" />
+    <Content Include="src\app\domain-b\feature-2\feature-2.component.css" />
+    <Content Include="src\app\domain-b\feature-2\feature-2.component.html" />
     <Content Include="src\app\widgets\nav\nav.component.css" />
     <Content Include="src\app\widgets\nav\nav.component.html" />
     <Content Include="src\assets\.gitkeep" />
@@ -142,6 +148,14 @@
     <TypeScriptCompile Include="src\app\domain-a\feature-1\feature-1.component.ts" />
     <TypeScriptCompile Include="src\app\domain-a\feature-2\feature-2.component.spec.ts" />
     <TypeScriptCompile Include="src\app\domain-a\feature-2\feature-2.component.ts" />
+    <TypeScriptCompile Include="src\app\domain-b\domain-b-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\domain-b\domain-b.module.ts" />
+    <TypeScriptCompile Include="src\app\domain-b\domain-b.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\domain-b\domain-b.component.ts" />
+    <TypeScriptCompile Include="src\app\domain-b\feature-1\feature-1.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\domain-b\feature-1\feature-1.component.ts" />
+    <TypeScriptCompile Include="src\app\domain-b\feature-2\feature-2.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\domain-b\feature-2\feature-2.component.ts" />
     <TypeScriptCompile Include="src\app\widgets\nav\nav.component.spec.ts" />
     <TypeScriptCompile Include="src\app\widgets\nav\nav.component.ts" />
     <TypeScriptCompile Include="src\app\widgets\widgets.module.ts" />

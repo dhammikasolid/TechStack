@@ -3,13 +3,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { MatSidenavModule } from '@angular/material';
 
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppCommonModule } from './app-common/app-common.module';
 import { WidgetsModule } from './widgets/widgets.module';
-import { DomainAModule } from './domain-a/domain-a.module';
-
 
 @NgModule({
   declarations: [
@@ -21,7 +18,6 @@ import { DomainAModule } from './domain-a/domain-a.module';
     AppCommonModule,
     WidgetsModule,
     MatSidenavModule,
-    DomainAModule,
 
     AppRoutingModule,
   ],

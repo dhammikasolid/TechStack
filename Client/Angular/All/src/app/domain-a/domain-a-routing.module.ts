@@ -11,7 +11,7 @@ import { Featuer2Component as DomainA1Featuer2Component } from './domain-a1/feat
 
 const routes: Routes = [
   {
-    path: 'domain-a',
+    path: '',
     component: DomainAComponent,
     children: [
       { path: 'feature-1', component: Feature1Component },
