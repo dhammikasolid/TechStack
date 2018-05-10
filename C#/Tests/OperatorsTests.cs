@@ -5,11 +5,9 @@ namespace UnitTests
 {
     public class OperatorsTests
     {
-        Operators _operators;
 
         public OperatorsTests()
         {
-            _operators = new Operators();
         }
 
         [Fact]
