@@ -15,6 +15,5 @@ import { Feature2Component } from './feature-2/feature-2.component';
     DomainARoutingModule,
   ],
   declarations: [DomainAComponent, Feature1Component, Feature2Component],
-  exports: [DomainAComponent]
 })
 export class DomainAModule { }

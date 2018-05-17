@@ -1,0 +1,26 @@
+USE [RefImpls]
+
+CREATE TABLE [dbo].[RateSchedule](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[From] [datetime] NULL,
+	[To] [datetime] NULL,
+	[Rate] [int] NULL,
+ CONSTRAINT [PK_RateSchedule] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+USE [RefImpls]
+GO
+
+CREATE TABLE [dbo].[ReservationSchedule](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[From] [datetime] NULL,
+	[To] [datetime] NULL,
+ CONSTRAINT [PK_ReservationSchedule] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
