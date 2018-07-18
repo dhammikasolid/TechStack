@@ -1,35 +1,54 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
 
 namespace UnitTests
 {
+    public class A
+    {
+        public int? P { get; set; }
+    }
+
     public class OperatorsTests
     {
-
-        public OperatorsTests()
+        [Fact]
+        public void ValueIfNull_NullCoalescing_Test()
         {
+            int? x = null;
+            Assert.Equal(2, x ?? 2);
+
+            x = 5;
+            Assert.Equal(5, x ?? 2);
         }
 
         [Fact]
-        public void Is_Test()
+        public void SafeNavigation_Test()
         {
-            var a = new A();
-            var b = new B();
+            A a = null;
+            Assert.Null(a?.P);
 
-            Assert.True(a is A);
-            Assert.True(b is A);
-            Assert.True(b is B);
+            A[] arr = null;
+            Assert.Null(arr?[0].P);
         }
 
         [Fact]
-        public void As_Test()
+        public void StandardNullHandling_Test()
         {
-            var b = new B();
+            A a = null;
+            int b = a?.P ?? -1;
+            Assert.Equal(-1, b);
 
-            Assert.NotNull(b as A);
+            var a2 = new A { P = 2 };
+            b = a2?.P ?? -1;
+            Assert.Equal(2, b);
         }
 
-        public class A { }
-        public class B : A { }
+        [Fact]
+        public void IncrementDecrement_Test()
+        {
+            double a = 1.5;
+
+            Assert.Equal(1.5, a++);
+            Assert.Equal(2.5, a);
+            Assert.Equal(3.5, ++a);
+        }
     }
 }

@@ -61,9 +61,10 @@
     <Compile Include="Linq\TechniquesTests.cs" />
     <Compile Include="Linq\TransformTests.cs" />
     <Compile Include="Methods\ParemeterPassingTest.cs" />
-    <Compile Include="ObjectDataSource.cs" />
+    <Compile Include="Linq\ObjectDataSource.cs" />
     <Compile Include="OperatorsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CastingAndTypeConversionsConversionTests.cs" />
     <Compile Include="xUnitTheories.cs" />
   </ItemGroup>
   <ItemGroup>
