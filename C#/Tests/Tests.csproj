@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="CollectionsTests.cs" />
     <Compile Include="EnumTests.cs" />
+    <Compile Include="LambdaExpressionsTests.cs" />
     <Compile Include="Linq\GroupingTests.cs" />
     <Compile Include="Linq\TechniquesTests.cs" />
     <Compile Include="Linq\TransformTests.cs" />
